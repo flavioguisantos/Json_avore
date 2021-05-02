@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="libs/jsonTree/jsonTree.css" rel="stylesheet"/>
+    <script src="libs/jsonTree/jsonTree.js"></script>
+
+<title>Teste Json</title>
+</head>
+
+<body>
+
+    <div id="nova" name="nova"></div>
+
+        <script>
+            var Nova = '{"firstName": "Flavio", "lastName": "Guilherme"}'
+        </script>
+
+    </body>
+
+    <script>
+
+        let data = JSON.parse(Nova)
+        jsonTree.create(data,  document.getElementById("nova"));
+
+    </script>
+
+</html>
